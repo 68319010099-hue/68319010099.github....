@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sidebar</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", Tahoma, sans-serif;
+}
+
+body{
+    background:#f4f8fc;
+    padding:30px;
+}
+
+.sidebar{
+    width:300px;
+    background:#ffffff;
+    border:1px solid #d6e9f8;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.sidebar-header{
+    background:#8ecae6;
+    color:#fff;
+    text-align:center;
+    padding:18px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.sidebar-section{
+    padding:18px;
+    border-bottom:1px solid #e7f1f8;
+}
+
+.sidebar-section:last-child{
+    border-bottom:none;
+}
+
+.sidebar-section h3{
+    color:#1d4e89;
+    margin-bottom:12px;
+    font-size:18px;
+}
+
+.sidebar-section ul{
+    list-style:none;
+}
+
+.sidebar-section ul li{
+    margin:8px 0;
+}
+
+.sidebar-section ul li a{
+    text-decoration:none;
+    color:#3b6ea5;
+    transition:.3s;
+}
+
+.sidebar-section ul li a:hover{
+    color:#0b5ed7;
+    padding-left:5px;
+}
+
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.tag{
+    background:#d9effa;
+    color:#1d4e89;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+.calendar{
+    text-align:center;
+    background:#eef7fd;
+    padding:15px;
+    border-radius:8px;
+    color:#1d4e89;
+}
+
+.notice{
+    background:#eaf7ff;
+    border-left:5px solid #4aa3df;
+    padding:12px;
+    color:#24557a;
+    border-radius:6px;
+    line-height:1.6;
+}
+</style>
+
+</head>
+<body>
+
+<div class="sidebar">
+
+    <div class="sidebar-header">
+        Sidebar
+    </div>
+
+    <!-- ข่าวล่าสุด -->
+    <div class="sidebar-section">
+        <h3>📰 ข่าวล่าสุด</h3>
+        <ul>
+            <li><a href="#">ประกาศเปิดรับสมัครสมาชิกใหม่</a></li>
+            <li><a href="#">อัปเดตระบบเว็บไซต์เวอร์ชันล่าสุด</a></li>
+            <li><a href="#">กิจกรรมประจำเดือนนี้</a></li>
+        </ul>
+    </div>
+
+    <!-- หมวดหมู่ -->
+    <div class="sidebar-section">
+        <h3>📂 หมวดหมู่</h3>
+        <ul>
+            <li><a href="#">ข่าวประชาสัมพันธ์</a></li>
+            <li><a href="#">บทความ</a></li>
+            <li><a href="#">กิจกรรม</a></li>
+            <li><a href="#">บริการ</a></li>
+        </ul>
+    </div>
+
+    <!-- Tags -->
+    <div class="sidebar-section">
+        <h3>🏷️ ป้ายกำกับ</h3>
+        <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Web</span>
+            <span class="tag">Design</span>
+        </div>
+    </div>
+
+    <!-- สินค้ายอดนิยม -->
+    <div class="sidebar-section">
+        <h3>⭐ สินค้ายอดนิยม</h3>
+        <ul>
+            <li><a href="#">Notebook</a></li>
+            <li><a href="#">Printer</a></li>
+            <li><a href="#">Wireless Mouse</a></li>
+        </ul>
+    </div>
+
+    <!-- เมนูลัด -->
+    <div class="sidebar-section">
+        <h3>⚡ เมนูลัด</h3>
+        <ul>
+            <li><a href="#">หน้าแรก</a></li>
+            <li><a href="#">เกี่ยวกับเรา</a></li>
+            <li><a href="#">ติดต่อ</a></li>
+        </ul>
+    </div>
+
+    <!-- ปฏิทิน -->
+    <div class="sidebar-section">
+        <h3>📅 ปฏิทิน</h3>
+        <div class="calendar">
+            กรกฎาคม 2026<br><br>
+            จ. อ. พ. พฤ. ศ. ส. อา.
+        </div>
+    </div>
+
+    <!-- ป้ายประชาสัมพันธ์ -->
+    <div class="sidebar-section">
+        <h3>📢 ป้ายประชาสัมพันธ์</h3>
+        <div class="notice">
+            เปิดให้บริการทุกวัน<br>
+            เวลา 08.30 - 16.30 น.<br><br>
+            สอบถามข้อมูลเพิ่มเติมได้ที่
+            <strong>02-123-4567</strong>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
